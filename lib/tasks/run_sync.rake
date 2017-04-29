@@ -1,7 +1,6 @@
 require "selenium-webdriver"
 require 'yaml'
 require 'ruby-progressbar'
-require 'byebug'
 require 'faker'
 require 'uuid'
 require 'fileutils'
