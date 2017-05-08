@@ -25,6 +25,6 @@ def apoc_bot
     sleep(5)
     @driver.find_element(:id, 'M_C_sCDTransactions_csfFilter_btnExport').click
     sleep(5)
-    @driver.navigate.to "https://aws.state.ak.us/ApocReports/CampaignDisclosure/CDIncome.aspx?exportAll=False&exportFormat=CSV&isExport=True"
+    @driver.navigate.to "https://aws.state.ak.us/ApocReports/CampaignDisclosure/CDIncome.aspx?exportAll=True&exportFormat=CSV&isExport=True"
     sleep(5)
 end
