@@ -18,7 +18,7 @@ def apoc_bot
     @driver.get "https://aws.state.ak.us/ApocReports/CampaignDisclosure/CDIncome.aspx"
     sleep(1)
     date_field = @driver.find_element(:id, "M_C_sCDTransactions_csfFilter_txtBeginDate")
-    date_field.send_keys (Date.today.prev_day.prev_day).strftime("%m/%d/%Y")
+    date_field.send_keys ('01/01/2012')
     date_field = @driver.find_element(:id, "M_C_sCDTransactions_csfFilter_txtEndDate")
     date_field.send_keys Time.now.strftime("%m/%d/%Y")
     @driver.find_element(:id, 'M_C_sCDTransactions_csfFilter_btnSearch').click
